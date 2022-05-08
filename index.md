@@ -20,7 +20,7 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
           echo "chruby ruby-3.1.1" >> ~/.zshrc （这里的ruby版本根据实际安装的版本来）
           然后只需ruby -v 验证即可
 2.安装Jekyll
-          gem install jekyll
+          gem install jekyll  bundler
 3.安装git
           brew install git
 
