@@ -8,8 +8,15 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
+```markdow
+拥有仓库写入权限的人员可以使用 Jekyll 向 GitHub Pages 站点添加内容。
+必须先创建一个 Jekyll 站点，然后才可将内容添加到 GitHub Pages 上的 Jekyll 站点。 
+使用 Jekyll 创建 GitHub Pages 站点”：
+1.安装ruby
+          brew install chruby ruby-install
+          ruby-install ruby
+2.安装git
+          brew install git
 
 # Header 1
 ## Header 2
