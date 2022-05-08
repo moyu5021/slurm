@@ -15,6 +15,10 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 1.安装ruby
           brew install chruby ruby-install
           ruby-install ruby
+          echo "source $(brew --prefix)/opt/chruby/share/chruby/chruby.sh" >> ~/.zshrc
+          echo "source $(brew --prefix)/opt/chruby/share/chruby/auto.sh" >> ~/.zshrc
+          echo "chruby ruby-3.1.1" >> ~/.zshrc （这里的ruby版本根据实际安装的版本来）
+          然后只需ruby -v 验证即可
 2.安装Jekyll
           gem install jekyll
 3.安装git
