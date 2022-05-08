@@ -15,7 +15,9 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
 1.安装ruby
           brew install chruby ruby-install
           ruby-install ruby
-2.安装git
+2.安装Jekyll
+          gem install jekyll
+3.安装git
           brew install git
 
 # Header 1
