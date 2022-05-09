@@ -23,6 +23,13 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
           gem install jekyll  bundler
 3.安装git
           brew install git
+4.使用jekyll构建一个默认的站点myblog出来
+          jekyll new myblog
+5.启动本地服务，连接localhost:4000查看网页形态
+          jekyll serve --trace
+          注：遇到报错：/Users/moyu/.gem/ruby/3.1.2/gems/jekyll-4.2.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
+          原因：从 Ruby 3.0 开始 webrick 已经不在绑定到 Ruby 中了，请参考链接： Ruby 3.0.0 Released 中的说明。webrick 需要手动进行添加。
+          执行命令：bundle add webrick
 
 # Header 1
 ## Header 2
