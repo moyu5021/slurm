@@ -5,7 +5,8 @@ tagline: Create a contact form and you are good to go
 ref: contact
 order: 1
 ---
-
-Jekyll is a great tool to create static sites but with static site, there's no backend to send your data to: that is why you need a third party service.
+```markdown
+如果你想联系我们，请拨打34245.
+```
 
 [Go to the Home Page]({{ '/' | absolute_url }})
