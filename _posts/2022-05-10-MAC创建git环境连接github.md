@@ -4,7 +4,9 @@ title: "MAC搭建jekll环境连接Github Blog"
 author: xujing
 ---
 
-主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.
+主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/slurm/images/龙猫.jpeg" width="20%">  
+
+![测试图](/slurm/images/龙猫.jpeg)
 ## 1.Github上创建仓库  
 
 ## 2.MAC上搭建jekyll环境  
@@ -35,7 +37,7 @@ gem install jekyll  bundler
 ❯ bundle exec jekyll serve --trace
 ```
 ## 3.MAC启动jekyll环境的错误解决方法
-```js
+```markdown
 // 报错提示信息1：
 ❯ jekyll serve --trace                                                                                                                      ─╯
 /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler/runtime.rb:309:in `check_for_activated_spec!': You have already activated mercenary 0.4.0, but your Gemfile requires mercenary 0.3.6. Prepending `bundle exec` to your command may solve this. (Gem::LoadError)
@@ -43,10 +45,6 @@ gem install jekyll  bundler
 ---
 	from /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler/spec_set.rb:136:in `each'
 	from /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler/spec_set.rb:136:in `each'
-	from /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler/runtime.rb:24:in `map'
-	from /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler/runtime.rb:24:in `setup'
-	from /Users/moyu/.gem/ruby/3.1.2/gems/bundler-2.3.13/lib/bundler.rb:151:in `setup'
-	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-4.2.2/lib/jekyll/plugin_manager.rb:52:in `require_from_bundler'
 	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-4.2.2/exe/jekyll:11:in `<top (required)>'
 	from /Users/moyu/.gem/ruby/3.1.2/bin/jekyll:25:in `load'
 	from /Users/moyu/.gem/ruby/3.1.2/bin/jekyll:25:in `<main>'
@@ -82,7 +80,6 @@ Configuration file: /Users/moyu/Documents/owner/GitHub/blog/slurm/_config.yml
 bundler: failed to load command: jekyll (/Users/moyu/.gem/ruby/3.1.2/bin/jekyll)
 /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve/servlet.rb:3:in `require': cannot load such file -- webrick (LoadError)
 	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve/servlet.rb:3:in `<top (required)>'
-	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve.rb:184:in `require_relative'
 	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve.rb:184:in `setup'
 	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve.rb:102:in `process'
 	from /Users/moyu/.gem/ruby/3.1.2/gems/jekyll-3.9.2/lib/jekyll/commands/serve.rb:93:in `block in start'
