@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Example content"
+author: ted
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

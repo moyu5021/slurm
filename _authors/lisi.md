@@ -1,6 +1,6 @@
 ---
-short_name: jill
-name: Jill Smith
+short_name: sili
+name: siliming
 position: Chief Editor
 layout: people
 ---

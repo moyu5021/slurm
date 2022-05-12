@@ -2,7 +2,7 @@
 layout: author
 title: 作者
 tagline: What I'm doing now
-permalink: /staff.html
+permalink: /author.html
 ref: author
 order: 2
 ---

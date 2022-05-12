@@ -4,7 +4,7 @@ title: "Post content styles"
 tagline: "This post demonstrates post content styles"
 categories: junk
 image: /thumbnail-mobile.png
-author: "Bart Simpson"
+author: sili
 meta: "Springfield"
 ---
 
