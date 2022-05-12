@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+  {{ content }}
+<ul>
+  {% for author in site.authors %}
+    <li>
+      <h2>
+	 <a class="author-link" href="{{ author.url | absolute_url }}" title="{{ author.name }}">{{ author.name | escape }}</a>
+      </h2>
+      <h3>{{ author.position }}</h3>
+      <p>{{ author.bio | markdownify}}</p>
+    </li>
+  {% endfor %}
+</ul>

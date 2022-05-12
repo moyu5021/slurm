@@ -27,4 +27,17 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['now', 'about', 'contact']
+header_page_refs: ['event', 'author', 'contact']
+
+collections:
+  authors:
+    output: true
+#    permalink: author/:title/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: authors
+    values:
+      layout: author
