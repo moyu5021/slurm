@@ -1,5 +1,5 @@
 title: Slurm
-description: 这里是对博客的描述。
+description: 这里是对博客的描述,ceshi。
 show_downloads: false
 
 baseurl: "/slurm" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
