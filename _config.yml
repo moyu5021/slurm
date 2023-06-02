@@ -14,6 +14,9 @@ cayman-blog:
   date_format: "%b %-d, %Y"
 
 theme: # leave it empty
+imglogo:
+    enable: true
+    src: images/slurm_logo.png
 
 # social
 author: XuJing
