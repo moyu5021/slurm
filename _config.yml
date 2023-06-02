@@ -17,7 +17,9 @@ theme: # leave it empty
 
 # social
 author: XuJing
-image: /thumbnail-jumbo.png
+#image: /thumbnail-jumbo.png
+image: images/yuzhou.jpeg
+
 #twitter:
 #  username: xujing
 
