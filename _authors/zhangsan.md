@@ -1,11 +1,11 @@
 ---
 layout: people
-short_name: xujing
-name: xujing chen
+short_name: zhangsan
+name: zhangsan chen
 position: Chiefa Editor
 ---  
 
-XUJING is an avid fruit grower based in the south of France.  
+zhangsan is an avid fruit grower based in the south of France.  
 
 
  <img src="/slurm/images/龙猫.jpeg" width="20%">  

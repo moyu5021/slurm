@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MAC搭建jekll环境连接Github Blog"
-author: xujing
+author: zhangsan
 ---
 
 主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/slurm/images/龙猫.jpeg" width="20%">  
