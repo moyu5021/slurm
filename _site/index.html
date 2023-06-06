@@ -32,7 +32,7 @@
 
 <!-- Place this data between the <head> tags of your website -->
 
-<meta name="description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。" />
+<meta name="description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统." />
 
 
 
@@ -44,7 +44,7 @@
 
 
 <meta name="twitter:title" content="Slurm" />
-<meta name="twitter:description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。" />
+<meta name="twitter:description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统." />
 
 
 
@@ -63,7 +63,7 @@
 
   <meta property="og:image" content="http://localhost:4000/slurm/images/yuzhou.jpeg" />
 
-<meta property="og:description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。" />
+<meta property="og:description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统." />
 <meta property="og:site_name" content="Slurm" />
 
 
@@ -145,7 +145,21 @@
             
             
               
+                <a class="page-link" href="http://localhost:4000/slurm/lecture.html">讲座列表</a>
+              
+            
+          
+            
+            
+              
                 <a class="page-link" href="http://localhost:4000/slurm/contact.html">Contact</a>
+              
+            
+          
+            
+            
+              
+                <a class="page-link" href="http://localhost:4000/slurm/now.html">Now</a>
               
             
           
@@ -162,7 +176,7 @@
         
         <section class="page-header">
             <h1 class="project-name">Slurm</h1>
-            <h2 class="project-tagline">Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。</h2>
+            <h2 class="project-tagline">Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统.</h2>
             
             <!-- Post tagline -->
             
@@ -175,7 +189,8 @@
 
   <p>Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。</p>
 
-<p>Slurm采用slurmctld服务（守护进程）作为中心管理器用于监测资源和作业，为了提高可用性，还可以配置另一个备份冗余管理器。各计算节点需启动slurmd守护进程，以便被用于作为远程shell使用：等待作业、执行作业、返回状态、再等待更多作业。slurmdbd(Slurm DataBase Daemon)数据库守护进程（非必需，建议采用，也可以记录到纯文本中等），可以将多个slurm管理的集群的记账信息记录在同一个数据库中。还可以启用slurmrestd(Slurm REST API Daemon)服务（非必需），该服务可以通过REST API与Slurm进行交互，所有功能都对应的API。用户工具包含 srun 运行作业、 scancel 终止排队中或运行中的作业、 sinfo 查看系统状态、 squeue 查看作业状态、 sacct 查看运行中或结束了的作业及作业步信息等命令。 sview 命令可以图形化显示系统和作业状态（可含有网络拓扑）。 scontrol 作为管理工具，可以监控、修改集群的配置和状态信息等。用于管理数据库的命令是 sacctmgr ，可认证集群、有效用户、有效记账账户等。</p>
+<p>Slurm采用slurmctld服务（守护进程）作为中心管理器用于监测资源和作业，为了提高可用性，还可以配置另一个备份冗余管理器。各计算节点需启动slurmd守护进程，以便被用于作为远程shell使用：等待作业、执行作业、返回状态、再等待更多作业。slurmdbd(Slurm DataBase Daemon)数据库守护进程（非必需，建议采用，也可以记录到纯文本中等），可以将多个slurm管理的集群的记账信息记录在同一个数据库中。还可以启用slurmrestd(Slurm REST API Daemon)服务（非必需），该服务可以通过REST API与Slurm进行交互，所有功能都对应的API。用户工具包含 srun 运行作业、 scancel 终止排队中或运行中的作业、 sinfo 查看系统状态、 squeue 查看作业状态、 sacct 查看运行中或结束了的作业及作业步信息等命令。 sview 命令可以图形化显示系统和作业状态（可含有网络拓扑）。 scontrol 作为管理工具，可以监控、修改集群的配置和状态信息等。用于管理数据库的命令是 sacctmgr ，可认证集群、有效用户、有效记账账户等</p>
+
 
 
   <h2>最近的博客文章</h2>
@@ -187,10 +202,52 @@
       <li>
 
         
-        <span class="post-meta">May 10, 2022</span>
+        <span class="post-meta">2023 May 30</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html" title="MAC搭建jekll环境连接Github Blog">MAC搭建jekll环境连接Github Blog</a>
+          <a class="post-link" href="http://localhost:4000/slurm/lecture/2023/2023/05/30/The-second-lecture.html" title="第二场讲座">第二场讲座</a>
+        </h2>
+
+        <p>我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+我们将于2023年10月1日举办第二场讲座，欢迎来参加。
+<img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
+
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">2023 May 20</span>
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/slurm/lecture/2023/2023/05/20/The-first-lecture.html" title="第一场讲座">第一场讲座</a>
+        </h2>
+
+        <p>我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+我们将于2023年10月1日举办第一场讲座，欢迎来参加。
+<img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
+
+
+      </li>
+    
+      <li>
+
+        
+        <span class="post-meta">2022 May 10</span>
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/slurm/m/2022/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html" title="MAC搭建jekll环境连接Github Blog">MAC搭建jekll环境连接Github Blog</a>
         </h2>
 
         <p>主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
@@ -202,10 +259,10 @@
       <li>
 
         
-        <span class="post-meta">Apr 29, 2017</span>
+        <span class="post-meta">2020 Apr 29</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/2017/04/29/cayman-example-content.html" title="Example content">Example content</a>
+          <a class="post-link" href="http://localhost:4000/slurm/a/2020/04/29/cayman-example-content.html" title="Example content">Example content</a>
         </h2>
 
         <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
@@ -217,24 +274,10 @@
       <li>
 
         
-        <span class="post-meta">Apr 20, 2017</span>
+        <span class="post-meta">2019 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/2017/04/20/welcome-to-jekyll.html" title="Welcome to Jekyll">Welcome to Jekyll</a>
-        </h2>
-
-        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many...
-
-      </p>
-</li>
-    
-      <li>
-
-        
-        <span class="post-meta">Apr 20, 2017</span>
-
-        <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/misc/2017/04/20/super-long-article.html" title="Some articles are just so long they deserve a really long title to see if things will break well">Some articles are just so long they deserve a really long title to see if things will break well</a>
+          <a class="post-link" href="http://localhost:4000/slurm/c/2019/2019/04/20/super-long-article.html" title="Some articles are just so long they deserve a really long title to see if things will break well">Some articles are just so long they deserve a really long title to see if things will break well</a>
         </h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis...
@@ -245,10 +288,10 @@
       <li>
 
         
-        <span class="post-meta">Apr 20, 2017</span>
+        <span class="post-meta">2018 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/junk/2017/04/20/post-content-styles.html" title="Post content styles">Post content styles</a>
+          <a class="post-link" href="http://localhost:4000/slurm/a/2018/2018/04/20/post-content-styles.html" title="Post content styles">Post content styles</a>
         </h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
@@ -260,10 +303,10 @@
       <li>
 
         
-        <span class="post-meta">Apr 20, 2017</span>
+        <span class="post-meta">2017 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/slurm/2017/04/20/my-example-post.html" title="My Example Post">My Example Post</a>
+          <a class="post-link" href="http://localhost:4000/slurm/c/2017/2017/04/20/my-example-post.html" title="My Example Post">My Example Post</a>
         </h2>
 
         <p>Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse...
@@ -271,8 +314,92 @@
       </p>
 </li>
     
+      <li>
+
+        
+        <span class="post-meta">2016 Apr 20</span>
+
+        <h2>
+          <a class="post-link" href="http://localhost:4000/slurm/b/2016/2016/04/20/welcome-to-jekyll.html" title="Welcome to Jekyll">Welcome to Jekyll</a>
+        </h2>
+
+        <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many...
+
+      </p>
+</li>
+    
   </ul>
 
+<h4>Category</h4>
+        
+        <li>
+<a href="/slurm/category/b" title="view all posts">b 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2016" title="view all posts">2016 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2016" title="view all posts">2016 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/c" title="view all posts">c 2</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2017" title="view all posts">2017 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2017" title="view all posts">2017 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/a" title="view all posts">a 2</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2018" title="view all posts">2018 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2018" title="view all posts">2018 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2019" title="view all posts">2019 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2019" title="view all posts">2019 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/m" title="view all posts">m 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2022" title="view all posts">2022 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2022" title="view all posts">2022 1</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/lecture" title="view all posts">lecture 2</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2023" title="view all posts">2023 2</a>
+        </li>
+        
+        <li>
+<a href="/slurm/category/2023" title="view all posts">2023 2</a>
+        </li>
+        
 </div>
 
             

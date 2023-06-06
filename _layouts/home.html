@@ -27,4 +27,9 @@ layout: default
     {% endfor %}
   </ul>
 
+<h4>Category</h4>
+        {% for category in site.categories %}
+        <li><a href="/slurm/category/{{ category | first }}" title="view all posts">{{ category | first }} {{ category | last | size }}</a>
+        </li>
+        {% endfor %}
 </div>
