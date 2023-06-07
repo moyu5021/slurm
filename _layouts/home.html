@@ -26,10 +26,14 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
-<h4>Category</h4>
-        {% for category in site.categories %}
-        <li><a href="/slurm/category/{{ category | first }}" title="view all posts">{{ category | first }} {{ category | last | size }}</a>
-        </li>
-        {% endfor %}
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{%endcapture %}
+    <div id="#\{\{ category_name | slugize \}\}"></div>
+    <p></p>
+    <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size()}})</h3>
+    <a name="{{ category_name | slugize }}"></a>
+  </div>
+{% endfor %}
 </div>

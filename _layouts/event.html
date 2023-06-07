@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: wenzhang/
 ---
 
 <div>
@@ -9,7 +10,7 @@ layout: default
   <div>&nbsp;</div>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in site.categories.wenzhang %}
       <li>
 
         {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}

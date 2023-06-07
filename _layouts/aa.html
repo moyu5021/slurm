@@ -1,0 +1,45 @@
+---
+layout: default
+---
+
+<div>
+
+  {{ content }}
+
+  <h2>最近的博客文章</h2>
+
+  <div>&nbsp;</div>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+
+        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
+        <span class="post-meta">{{ post.date | date: date_format }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
+        </h2>
+
+        {{ post.excerpt | markdownify | truncatewords: 30 }}
+
+      </li>
+    {% endfor %}
+  </ul>
+<div id="archives">
+{% for category in site.categories %}
+  <div class="archive-group">
+    {% capture category_name %}{{ category | first }}{%endcapture %}
+    <div id="#\{\{ category_name | slugize \}\}"></div>
+    <p></p>
+
+    <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size()}})</h3>
+    <a name="\{\{ category_name | slugize \}\}"></a>
+    {%for post in site.categories[category_name] %}
+    <article class="archive-item">
+      <h4><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
+    </article>
+    {% endfor %}
+  </div>
+{% endfor %}
+</div>

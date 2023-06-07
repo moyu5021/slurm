@@ -11,6 +11,10 @@ layout: page
         <a href="{{ site.baseurl }}{{ post.url }}">
           {{ post.title }}
         </a>
+         {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
+         {% for author in filtered_authors %}
+             <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>
+         {% endfor %}
         <small>{{ post.date | date_to_string }}</small>
       </h3>
     </li>
