@@ -3,7 +3,7 @@ description: Slurm(Simple Linux Utility for Resource Management， http://slurm.
 show_downloads: false
 
 baseurl: "/slurm" # change this to the subpath of your site, e.g. /blog. Leave it empty if you don't need it.
-url: "https://moyu5021.github.io/slurm" # change this to the base hostname & protocol for your site
+url: "https://moyu5021.github.io" # change this to the base hostname & protocol for your site
 
 widgets:
 - category
