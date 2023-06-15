@@ -7,9 +7,9 @@ categories: wenzhang
 tags: [test]
 ---
 
-主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/slurm/images/龙猫.jpeg" width="20%">  
+主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/images/龙猫.jpeg" width="20%">  
 
-![测试图](/slurm/images/龙猫.jpeg)
+![测试图](/images/龙猫.jpeg)
 ## 1.Github上创建仓库  
 
 ## 2.MAC上搭建jekyll环境  
