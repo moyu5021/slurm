@@ -12,4 +12,4 @@ categories: lecture
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
-<img src="/images/龙猫.jpeg" width="20%">
+<img src="/slurm/images/龙猫.jpeg" width="20%">
