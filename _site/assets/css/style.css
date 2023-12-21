@@ -596,7 +596,7 @@ th {
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid #e8e8e8;
+  box-shadow: 0 0 5px #e8e8e8;
   min-height: 55.95px;
   position: relative; }
 
@@ -673,9 +673,13 @@ th {
  */
 .post-list {
   margin-left: 0;
-  list-style: none; }
+  list-style: none;
+  padding-left: 0 !important; }
   .post-list > li {
-    margin-bottom: 45px; }
+    margin-bottom: 30px;
+    box-shadow: 0 0 5px #0000001A;
+    padding: 15px;
+    border-radius: 10px; }
   .post-list > li > h2 {
     margin-top: 0rem;
     margin-bottom: 0.4rem; }
@@ -824,7 +828,7 @@ a {
   @media screen and (min-width: 64em) {
     .main-content {
       max-width: 64rem;
-      padding: 3rem 6rem;
+      padding: 2rem 6rem;
       margin: 0 auto;
       font-size: 1.1rem; } }
   @media screen and (min-width: 42em) and (max-width: 64em) {

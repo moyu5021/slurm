@@ -50,18 +50,18 @@
 
 <!-- Twitter summary card with large image must be at least 280x150px -->
 
-  <meta name="twitter:image:src" content="http://localhost:4000/images/yuzhou.jpeg" />
-  <meta name="twitter:image" content="http://localhost:4000/images/yuzhou.jpeg" />
+  <meta name="twitter:image:src" content="http://localhost:4000/slurm/images/yuzhou.jpeg" />
+  <meta name="twitter:image" content="http://localhost:4000/slurm/images/yuzhou.jpeg" />
 
-<meta name="twitter:url" content="http://localhost:4000//" />
+<meta name="twitter:url" content="http://localhost:4000/slurm/" />
 
 <!-- Open Graph data -->
 <meta property="og:title" content="Slurm" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="http://localhost:4000//" />
+<meta property="og:url" content="http://localhost:4000/slurm/" />
 
 
-  <meta property="og:image" content="http://localhost:4000/images/yuzhou.jpeg" />
+  <meta property="og:image" content="http://localhost:4000/slurm/images/yuzhou.jpeg" />
 
 <meta property="og:description" content="Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统." />
 <meta property="og:site_name" content="Slurm" />
@@ -82,11 +82,11 @@
 
     
     
-    <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="http://localhost:4000/slurm/">
     
     
     
-    <link rel="shortcut icon" href="http://localhost:4000/favicon.ico">
+    <link rel="shortcut icon" href="http://localhost:4000/slurm/favicon.ico">
     
     <meta name="robots" content="noarchive">
     
@@ -94,7 +94,7 @@
         <link rel="alternate" media="handheld" href=""> -->
         
         
-        <link rel="stylesheet" href="http://localhost:4000/assets/css/style.css?v=">
+        <link rel="stylesheet" href="http://localhost:4000/slurm/assets/css/style.css?v=">
     </head>
     <body>
         
@@ -104,6 +104,9 @@
     
     
 
+    
+    
+      <a class="site-title" href="http://localhost:4000/slurm/">Slurm</a>
     
 
     
@@ -124,35 +127,35 @@
             
             
               
-                <a class="page-link" href="http://localhost:4000/about.html">About</a>
+                <a class="page-link" href="http://localhost:4000/slurm/about.html">About</a>
               
             
           
             
             
               
-                <a class="page-link" href="http://localhost:4000/event.html">文章列表</a>
+                <a class="page-link" href="http://localhost:4000/slurm/event.html">文章列表</a>
               
             
           
             
             
               
-                <a class="page-link" href="http://localhost:4000/author.html">作者</a>
+                <a class="page-link" href="http://localhost:4000/slurm/author.html">作者</a>
               
             
           
             
             
               
-                <a class="page-link" href="http://localhost:4000/lecture.html">讲座列表</a>
+                <a class="page-link" href="http://localhost:4000/slurm/lecture.html">讲座列表</a>
               
             
           
             
             
               
-                <a class="page-link" href="http://localhost:4000/contact.html">Contact</a>
+                <a class="page-link" href="http://localhost:4000/slurm/contact.html">Contact</a>
               
             
           
@@ -167,7 +170,7 @@
         
         
         
-        <section class="page-header">
+        <section class="page-header" style="display: none">
             <h1 class="project-name">Slurm</h1>
             <h2 class="project-tagline">Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统.</h2>
             
@@ -180,15 +183,12 @@
             
             <div>
 
-  <p>Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理和作业调度系统。超级计算系统可利用Slurm对资源和作业进行管理，以避免相互干扰，提高运行效率。所有需运行的作业，无论是用于程序调试还是业务计算，都可以通过交互式并行 srun 、批处理式 sbatch 或分配式 salloc 等命令提交，提交后可以利用相关命令查询作业状态等。</p>
-
-<p>Slurm采用slurmctld服务（守护进程）作为中心管理器用于监测资源和作业，为了提高可用性，还可以配置另一个备份冗余管理器。各计算节点需启动slurmd守护进程，以便被用于作为远程shell使用：等待作业、执行作业、返回状态、再等待更多作业。slurmdbd(Slurm DataBase Daemon)数据库守护进程（非必需，建议采用，也可以记录到纯文本中等），可以将多个slurm管理的集群的记账信息记录在同一个数据库中。还可以启用slurmrestd(Slurm REST API Daemon)服务（非必需），该服务可以通过REST API与Slurm进行交互，所有功能都对应的API。用户工具包含 srun 运行作业、 scancel 终止排队中或运行中的作业、 sinfo 查看系统状态、 squeue 查看作业状态、 sacct 查看运行中或结束了的作业及作业步信息等命令。 sview 命令可以图形化显示系统和作业状态（可含有网络拓扑）。 scontrol 作为管理工具，可以监控、修改集群的配置和状态信息等。用于管理数据库的命令是 sacctmgr ，可认证集群、有效用户、有效记账账户等</p>
+  
 
 
+<!--  <h2>最近的博客文章</h2>-->
 
-  <h2>最近的博客文章</h2>
-
-  <div> </div>
+<!--  <div>&nbsp;</div>-->
 
   <ul class="post-list">
     
@@ -198,7 +198,7 @@
         <span class="post-meta">2023 May 30</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/lecture/2023/05/30/The-second-lecture.html" title="第二场讲座">第二场讲座</a>
+          <a class="post-link" href="http://localhost:4000/slurm/lecture/2023/05/30/The-second-lecture.html" title="第二场讲座">第二场讲座</a>
         </h2>
 
         <p>我们将于2023年10月1日举办第二场讲座，欢迎来参加。
@@ -208,7 +208,7 @@
 我们将于2023年10月1日举办第二场讲座，欢迎来参加。
 我们将于2023年10月1日举办第二场讲座，欢迎来参加。
 我们将于2023年10月1日举办第二场讲座，欢迎来参加。
-<img src="/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
+<img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
 
 
       </li>
@@ -219,7 +219,7 @@
         <span class="post-meta">2023 May 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/lecture/2023/05/20/The-first-lecture.html" title="第一场讲座">第一场讲座</a>
+          <a class="post-link" href="http://localhost:4000/slurm/lecture/2023/05/20/The-first-lecture.html" title="第一场讲座">第一场讲座</a>
         </h2>
 
         <p>我们将于2023年10月1日举办第一场讲座，欢迎来参加。
@@ -229,7 +229,7 @@
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。
-<img src="/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
+<img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
 
 
       </li>
@@ -240,10 +240,10 @@
         <span class="post-meta">2022 May 10</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html" title="MAC搭建jekll环境连接Github Blog">MAC搭建jekll环境连接Github Blog</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html" title="MAC搭建jekll环境连接Github Blog">MAC搭建jekll环境连接Github Blog</a>
         </h2>
 
-        <p>主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
+        <p>主要介绍如何在MAC从无到有安装Git和Jekyll环境，以及下载上传代码到github上.  <img src="/slurm/images/%E9%BE%99%E7%8C%AB.jpeg" width="20%"></p>
 
 
 
@@ -255,7 +255,7 @@
         <span class="post-meta">2020 Apr 29</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2020/04/29/cayman-example-content.html" title="Example content">Example content</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2020/04/29/cayman-example-content.html" title="Example content">Example content</a>
         </h2>
 
         <p>Text can be <strong>bold</strong>, <em>italic</em>, or <del>strikethrough</del>.</p>
@@ -270,7 +270,7 @@
         <span class="post-meta">2019 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2019/04/20/super-long-article.html" title="Some articles are just so long they deserve a really long title to see if things will break well">Some articles are just so long they deserve a really long title to see if things will break well</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2019/04/20/super-long-article.html" title="Some articles are just so long they deserve a really long title to see if things will break well">Some articles are just so long they deserve a really long title to see if things will break well</a>
         </h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit. Proin convallis...
@@ -284,7 +284,7 @@
         <span class="post-meta">2018 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2018/04/20/post-content-styles.html" title="Post content styles">Post content styles</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2018/04/20/post-content-styles.html" title="Post content styles">Post content styles</a>
         </h2>
 
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce bibendum neque eget nunc mattis eu sollicitudin enim tincidunt. Vestibulum lacus tortor, ultricies id dignissim ac, bibendum in velit.</p>
@@ -299,7 +299,7 @@
         <span class="post-meta">2017 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2017/04/20/my-example-post.html" title="My Example Post">My Example Post</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2017/04/20/my-example-post.html" title="My Example Post">My Example Post</a>
         </h2>
 
         <p>Eos eu docendi tractatos sapientem, brute option menandri in vix, quando vivendo accommodare te ius. Nec melius fastidii constituam id, viderer theophrastus ad sit, hinc semper periculis cum id. Noluisse...
@@ -313,7 +313,7 @@
         <span class="post-meta">2016 Apr 20</span>
 
         <h2>
-          <a class="post-link" href="http://localhost:4000/wenzhang/2016/04/20/welcome-to-jekyll.html" title="Welcome to Jekyll">Welcome to Jekyll</a>
+          <a class="post-link" href="http://localhost:4000/slurm/wenzhang/2016/04/20/welcome-to-jekyll.html" title="Welcome to Jekyll">Welcome to Jekyll</a>
         </h2>
 
         <p>You’ll find this post in your <code class="language-plaintext highlighter-rouge">_posts</code> directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many...
@@ -333,37 +333,37 @@
     
     <article class="archive-item">
      
-      <h4>2022年05月10日 <a href="/wenzhang/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html">MAC搭建jekll环境连接Github Blog</a>
+      <h4>2022年05月10日 <a href="/slurm/wenzhang/2022/05/10/MAC%E5%88%9B%E5%BB%BAgit%E7%8E%AF%E5%A2%83%E8%BF%9E%E6%8E%A5github.html">MAC搭建jekll环境连接Github Blog</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2020年04月29日 <a href="/wenzhang/2020/04/29/cayman-example-content.html">Example content</a>
+      <h4>2020年04月29日 <a href="/slurm/wenzhang/2020/04/29/cayman-example-content.html">Example content</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2019年04月20日 <a href="/wenzhang/2019/04/20/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well</a>
+      <h4>2019年04月20日 <a href="/slurm/wenzhang/2019/04/20/super-long-article.html">Some articles are just so long they deserve a really long title to see if things will break well</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2018年04月20日 <a href="/wenzhang/2018/04/20/post-content-styles.html">Post content styles</a>
+      <h4>2018年04月20日 <a href="/slurm/wenzhang/2018/04/20/post-content-styles.html">Post content styles</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2017年04月20日 <a href="/wenzhang/2017/04/20/my-example-post.html">My Example Post</a>
+      <h4>2017年04月20日 <a href="/slurm/wenzhang/2017/04/20/my-example-post.html">My Example Post</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2016年04月20日 <a href="/wenzhang/2016/04/20/welcome-to-jekyll.html">Welcome to Jekyll</a>
+      <h4>2016年04月20日 <a href="/slurm/wenzhang/2016/04/20/welcome-to-jekyll.html">Welcome to Jekyll</a>
 </h4>
     </article>
     
@@ -380,13 +380,13 @@
     
     <article class="archive-item">
      
-      <h4>2023年05月30日 <a href="/lecture/2023/05/30/The-second-lecture.html">第二场讲座</a>
+      <h4>2023年05月30日 <a href="/slurm/lecture/2023/05/30/The-second-lecture.html">第二场讲座</a>
 </h4>
     </article>
     
     <article class="archive-item">
      
-      <h4>2023年05月20日 <a href="/lecture/2023/05/20/The-first-lecture.html">第一场讲座</a>
+      <h4>2023年05月20日 <a href="/slurm/lecture/2023/05/20/The-first-lecture.html">第一场讲座</a>
 </h4>
     </article>
     
@@ -421,7 +421,7 @@
                 
                 
                 <span class="my-span-icon">
-                    <a href="http://localhost:4000/contact.html" aria-label="Contact" title="Contact ">
+                    <a href="http://localhost:4000/slurm/contact.html" aria-label="Contact" title="Contact ">
                         <svg class="my-svg-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewbox="0 0 24 24"><path d="M12 .02c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6.99 6.98l-6.99 5.666-6.991-5.666h13.981zm.01 10h-14v-8.505l7 5.673 7-5.672v8.504z"></path></svg>
                     </a>
                 </span>

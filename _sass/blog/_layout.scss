@@ -2,7 +2,8 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color-light;
+  //border-bottom: 1px solid $grey-color-light;
+  box-shadow: 0 0 5px $grey-color-light;
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
@@ -115,9 +116,13 @@
 .post-list {
   margin-left: 0;
   list-style: none;
+  padding-left: 0 !important;
 
   > li {
-    margin-bottom: $spacing-unit * 1.5;
+    margin-bottom: $spacing-unit * 1;
+    box-shadow: 0 0 5px #0000001A;
+    padding: 15px;
+    border-radius: 10px
   }
 
   > li > h2 {

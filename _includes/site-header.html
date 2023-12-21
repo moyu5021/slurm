@@ -7,6 +7,9 @@
     {% if page.layout != 'home' %}
       <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
     {% endif %}
+    {% if page.layout == 'home' %}
+      <a class="site-title" href="{{ "/" | absolute_url }}">{{ site.title | escape }}</a>
+    {% endif %}
 
     {% if page_refs %}
       <nav class="site-nav">
