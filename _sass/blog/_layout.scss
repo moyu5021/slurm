@@ -192,11 +192,22 @@
     margin-left: 20px;
 
     .category-head {
-      font-size: 30px;
-      font-weight: bold;
-      margin-top: 0 !important;
+      display: flex;
+      align-items: center;
       border-bottom: 1px solid #e1e1e1;
-      padding-bottom: 15px;
+      padding-bottom: 10px;
+
+      div {
+        font-size: 24px;
+        font-weight: bold;
+        margin-top: 0 !important;
+      }
+
+      a {
+        display: block;
+        margin-left: auto;
+        font-size: 16px;
+      }
     }
 
     &:first-child {
@@ -236,7 +247,7 @@
     text-align: center;
     text-decoration: none;
 
-    .item-image{
+    .item-image {
       display: block;
       width: 125px;
       height: 125px;

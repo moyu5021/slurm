@@ -4,60 +4,64 @@ layout: default
 
 <div>
 
-  {{ content }}
+    {{ content }}
 
-<!--  <h2>最近的博客文章</h2>-->
+    <!--  <h2>最近的博客文章</h2>-->
 
-<!--  <div>&nbsp;</div>-->
+    <!--  <div>&nbsp;</div>-->
 
-<!--首页文章列表2023年12月23日19:57:33注释-->
-<!--  <ul class="post-list">-->
-<!--    {% for post in site.posts %}-->
-<!--      <li>-->
+    <!--首页文章列表2023年12月23日19:57:33注释-->
+    <!--  <ul class="post-list">-->
+    <!--    {% for post in site.posts %}-->
+    <!--      <li>-->
 
-<!--        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}-->
-<!--        <span class="post-meta">{{ post.date | date: date_format }}</span>-->
+    <!--        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}-->
+    <!--        <span class="post-meta">{{ post.date | date: date_format }}</span>-->
 
-<!--        <h2>-->
-<!--          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>-->
-<!--        </h2>-->
+    <!--        <h2>-->
+    <!--          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>-->
+    <!--        </h2>-->
 
-<!--        {{ post.excerpt | markdownify | truncatewords: 30 }}-->
+    <!--        {{ post.excerpt | markdownify | truncatewords: 30 }}-->
 
-<!--      </li>-->
-<!--    {% endfor %}-->
-<!--  </ul>-->
+    <!--      </li>-->
+    <!--    {% endfor %}-->
+    <!--  </ul>-->
 
-<!--新增首页展示2023年12月23日19:58:35新增 -->
-<div class="home-static">
-  <div class="m-logo">
-    <img src="{{ site.baseurl }}/assets/images/slurm_logo.png">
-  </div>
-  <div class="item-left">
-    <p class="p1">NJNU Particle PhysicsGroup</p>
-    <p class="p2">We are the particle physics group at NanjingNormal University. We are involved in the theoryof physics beyond the Standard Model andQuantum Chromodynamics, and major experiments,including CMS，BES-I and Belle</p>
-  </div>
-  <div class="item-right">
-    <img src="{{ site.baseurl }}/assets/images/slurm_logo.png">
-  </div>
-</div>
+    <!--新增首页展示2023年12月23日19:58:35新增 -->
+    <div class="home-static">
+        <div class="m-logo">
+            <img src="{{ site.baseurl }}/assets/images/slurm_logo.png">
+        </div>
+        <div class="item-left">
+            <p class="p1">NJNU Particle PhysicsGroup</p>
+            <p class="p2">We are the particle physics group at NanjingNormal University. We are involved in the theoryof
+                physics beyond the Standard Model andQuantum Chromodynamics, and major experiments,including CMS，BES-I
+                and Belle</p>
+        </div>
+        <div class="item-right">
+            <img src="{{ site.baseurl }}/assets/images/slurm_logo.png">
+        </div>
+    </div>
 
-<div id="archives">
-{% for category in site.categories %}
-  <div class="archive-group">
-    {% capture category_name %}{{ category | first }}{%endcapture %}
-    <div id="#\{\{ category_name | slugize \}\}"></div>
-    <p></p>
-    <h3 class="category-head">{{ category_name }} ({{site.categories[category_name].size()}})</h3>
-    <a name="{{ category_name | slugize }}"></a>
-    {%for post in site.categories[category_name] %}
-    <article class="archive-item">
-     
-      <h4>{{ post.date|date:"%Y年%m月%d日"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h4>
-    </article>
-    {% endfor %}
-
-
-  </div>
-{% endfor %}
+    <div id="archives">
+        {% for category in site.categories %}
+        <div class="archive-group">
+            {% capture category_name %}{{ category | first }}{%endcapture %}
+            <div id="#\{\{ category_name | slugize \}\}"></div>
+            <p></p>
+            <h3 class="category-head">
+                <div>{{ category_name }} ({{site.categories[category_name].size()}})</div>
+                <a href="{{ site.baseurl }}/event">查看更多 >></a>
+            </h3>
+            <a name="{{ category_name | slugize }}"></a>
+            {% for post in site.categories[category_name] | limit: 10 %}
+            <article class="archive-item">
+                <h4>{{ post.date|date:"%Y年%m月%d日"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                </h4>
+            </article>
+            {% endfor %}
+        </div>
+        {% endfor %}
+    </div>
 </div>
