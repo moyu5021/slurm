@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -668,6 +669,35 @@ th {
           margin-bottom: 10px;
           margin-right: 20px; } }
 
+/*
+* 首页静态展示
+*/
+.home-static {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center; }
+  .home-static .m-logo {
+    display: none; }
+  .home-static .item-left .p1 {
+    margin: 0;
+    line-height: 40px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #159957; }
+  .home-static .item-left .p2 {
+    margin: 15px 0 0 0;
+    line-height: 30px;
+    font-size: 16px;
+    color: #333; }
+  .home-static .item-right {
+    flex: 0 0 250px;
+    height: 250px;
+    margin-left: 30px; }
+    .home-static .item-right img {
+      display: block;
+      width: 100%;
+      height: 100%; }
+
 /**
  * Post list
  */
@@ -715,6 +745,53 @@ th {
   display: block;
   font-size: 24px; }
 
+.custom-author-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px; }
+  .custom-author-list .custom-author-list-item {
+    display: block;
+    flex: 0 0 25%;
+    text-align: center;
+    text-decoration: none; }
+    .custom-author-list .custom-author-list-item .item-image {
+      display: block;
+      width: 125px;
+      height: 125px;
+      margin: 0 auto;
+      border-radius: 50%; }
+    .custom-author-list .custom-author-list-item .item-name {
+      margin-top: 10px;
+      margin-bottom: 10px; }
+    .custom-author-list .custom-author-list-item .item-position {
+      font-size: 16px; }
+    .custom-author-list .custom-author-list-item .item-text {
+      line-height: 25px;
+      font-size: 14px;
+      color: #999; }
+
+@media screen and (max-width: 768px) {
+  .home-static {
+    margin-bottom: 30px;
+    display: block; }
+    .home-static .m-logo {
+      display: block !important; }
+      .home-static .m-logo img {
+        display: block;
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto 30px auto; }
+    .home-static .item-right {
+      display: none !important; }
+
+  #archives {
+    display: block !important; }
+    #archives .archive-group {
+      flex: 0 0 100% !important;
+      margin: 0 0 20px 0; }
+
+  .custom-author-list .custom-author-list-item {
+    flex: 0 0 100%; } }
 * {
   box-sizing: border-box; }
 

@@ -5,18 +5,32 @@ layout: default
 <div>
     {{ content }}
 
-<ul>
-  {% for author in site.authors %}
-    <li>
-      <h2>
-	 <a class="author-link" href="{{ author.url | absolute_url }}" title="{{ author.name }}">{{ author.name | escape }}</a>
-         {{ author.position }}
-      </h2>
-      <p>{{ author.bio | markdownify}}</p>
-
-    </li>
-  {% endfor %}
-</ul>
+    <h2 class="author-title" style="text-align: center;font-weight: bold">作者列表</h2>
 
 
+    <div class="custom-author-list">
+        {% for author in site.authors %}
+        <a class="custom-author-list-item" href="{{ author.url | absolute_url }}">
+            {% if author.picture %}
+            <img class="item-image" src="{{ author.picture }}">
+            {% else %}
+            <img class="item-image" src="{{ site.baseurl }}/assets/images/slurm_logo.png">
+            {% endif %}
+            <h3 class="item-name">{{ author.name |--> escape }}</h3>
+            <div class="item-position">{{ author.position }}</div>
+            <div class="item-text">{{ author.bio | markdownify}}</div>
+        </a>
+        {% endfor %}
+
+        <!--老的列表配置-->
+        <!--<li>-->
+        <!--    <h2>-->
+        <!--        <a class="author-link" href="{{ author.url | absolute_url }}" title="{{ author.name }}">{{ author.name |-->
+        <!--            escape }}</a>-->
+        <!--        {{ author.position }}-->
+        <!--    </h2>-->
+        <!--    <p>{{ author.bio | markdownify}}</p>-->
+        <!--</li>-->
+
+    </div>
 </div>
