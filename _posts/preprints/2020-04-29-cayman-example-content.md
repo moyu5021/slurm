@@ -2,7 +2,7 @@
 layout: post
 title: "Example content"
 author: ted
-category: wenzhang
+category: preprints
 ---
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

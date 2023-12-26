@@ -3,7 +3,7 @@ layout: post
 title: "MAC搭建jekll环境连接Github Blog"
 author: zhangsan
 subtitle: Each post also has a subtitle
-categories: wenzhang
+categories: preprints
 tags: [test]
 ---
 

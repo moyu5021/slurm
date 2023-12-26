@@ -2,7 +2,7 @@
 layout: post
 title: "Post content styles"
 tagline: "This post demonstrates post content styles"
-categories: wenzhang
+categories: preprints
 image: /thumbnail-mobile.png
 author: lisi
 meta: "Springfield"
