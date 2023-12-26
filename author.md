@@ -1,6 +1,6 @@
 ---
 layout: author
-title: 作者
+title: People
 tagline: What I'm doing now
 permalink: /author.html
 ref: author

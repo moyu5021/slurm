@@ -1,6 +1,6 @@
 ---
 layout: lecture
-title: 讲座列表
+title: Lecture
 tagline: 博客列表
 permalink: /lecture.html
 ref: lecture
