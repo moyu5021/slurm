@@ -610,7 +610,7 @@ th {
   float: left;
   text-decoration: none; }
   .site-title, .site-title:visited, .site-title:hover {
-    color: #159957;
+    color: #333;
     text-decoration: none; }
 
 .site-nav {
@@ -621,7 +621,7 @@ th {
   .site-nav .menu-icon {
     display: none; }
   .site-nav .page-link {
-    color: #159957;
+    color: #333;
     line-height: 1.5; }
     .site-nav .page-link:not(:last-child) {
       margin-right: 20px; }
@@ -683,7 +683,7 @@ th {
     line-height: 40px;
     font-size: 32px;
     font-weight: bold;
-    color: #159957; }
+    color: #333; }
   .home-static .item-left .p2 {
     margin: 15px 0 0 0;
     line-height: 30px;
@@ -868,8 +868,8 @@ a {
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #159957;
-  background-image: linear-gradient(120deg, #155799, #159957); }
+  background-color: #333;
+  background-image: linear-gradient(120deg, #155799, #333); }
   @media screen and (min-width: 64em) {
     .page-header {
       padding: 5rem 6rem; } }
@@ -967,7 +967,7 @@ a {
     margin-top: 2rem;
     margin-bottom: 1rem;
     font-weight: normal;
-    color: #159957; }
+    color: #333; }
   .main-content p {
     margin-bottom: 1em; }
   .main-content code {
@@ -1108,8 +1108,8 @@ a {
   height: 24px; }
   .site-footer .my-svg-icon:hover {
     text-decoration: none;
-    color: #159957;
-    fill: #159957;
+    color: #333;
+    fill: #333;
     transform: scale(1.25);
     transition: color 0.5s, transform 0.2s ease-out; }
   @media screen and (min-width: 64em) {

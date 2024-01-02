@@ -23,7 +23,7 @@ permalink: preprints/
             </h2>
             {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
             {% for author in filtered_authors %}
-            <a href="{{ author.url }}">{{ author.short_name }}</a>
+            <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
             {% endfor %}
             {{ post.excerpt | markdownify | truncatewords: 30 }}
         </li>
