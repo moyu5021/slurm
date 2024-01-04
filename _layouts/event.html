@@ -25,7 +25,7 @@ permalink: Preprints/
             {% for author in filtered_authors %}
             <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
             {% endfor %}
-            <div style="margin-top: 15px">{{ post.excerpt | markdownify | truncatewords: 30 }}</div>
+            <!--<div style="margin-top: 15px">{{ post.excerpt | markdownify | truncatewords: 30 }}</div>-->
         </li>
         {% endfor %}
     </ul>
