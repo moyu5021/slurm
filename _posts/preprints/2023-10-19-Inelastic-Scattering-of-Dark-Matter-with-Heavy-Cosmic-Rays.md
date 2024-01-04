@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Inelastic Scattering of Dark Matter with Heavy Cosmic Rays"
+title: "2310.12501 Inelastic Scattering of Dark Matter with Heavy Cosmic Rays"
 author: zhangsan
 categories: preprints
 ---
