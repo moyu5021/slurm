@@ -1,6 +1,6 @@
 ---
 layout: event
-title: Preprints
+title: Preprint
 tagline: 博客列表
 permalink: /event.html
 ref: event
