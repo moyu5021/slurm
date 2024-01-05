@@ -17,16 +17,10 @@ permalink: Preprints/
                     {{ post.title | escape }}
                 </a>
             </h2>
-	    {% assign post_authors = post.author | split: ',' %}  <!-- 将逗号分隔的作者列表转换为数组 -->
-		{% assign filtered_authors = site.authors | where: 'short_name', post_author %}
-
-		{% for author in post_authors %}
-  			{% if author.short_name in filtered_authors %}
-    			<a href="{{ author.url | absolute_url }}">{{ author.short_name }}</a>
-  			{% else %}
-    			<a>{{ author }}</a>
-	  		{% endif %}
-		{% endfor %}
+            {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
+            {% for author in filtered_authors %}
+            <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
+            {% endfor %}
             <!--<div style="margin-top: 15px">{{ post.excerpt | markdownify | truncatewords: 30 }}</div>-->
         </li>
         {% endfor %}
