@@ -57,7 +57,8 @@ body{
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
-    background-color: $background-color;
+    //background-color: $background-color;
+    background: #1a1a1a;
     border: 1px solid $grey-color-light;
     border-radius: 5px;
     text-align: right;
@@ -146,7 +147,7 @@ body{
   }
 
   .item-right {
-    flex: 0 0 250px;
+    flex: 0 0 auto;
     height: 250px;
     margin-left: 30px;
 

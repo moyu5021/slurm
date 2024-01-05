@@ -1,33 +1,44 @@
 ---
 layout: default
 permalink: Lectures/
-date_format: "%Y-%m-%d" 
+date_format: "%Y-%m-%d"
 ---
 
 <div>
 
-  {{ content }}
+    {{ content }}
 
-  <div>&nbsp;</div>
+    <div>&nbsp;</div>
 
-  <ul class="post-list">
-    {% for post in site.categories.Lectures %}
-      <li>
+    <ul class="post-list">
+        {% for post in site.categories.Lectures %}
+        <li>
 
-        <span class="post-meta">{{post.date|date:"%Y-%m-%d"}}</span>
+            <h2>
+                <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title |
+                    escape }}</a>
+            </h2>
+            <span class="post-meta">
+            by
+            {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
+            {% for author in filtered_authors %}
+            <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>
+            {% endfor %}
+            on
+            {{post.date|date:"%Y-%m-%d"}}
+        </span>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
-         {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
-         {% for author in filtered_authors %}
-             <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>
-         {% endfor %}
 
-        {{ post.excerpt | markdownify | truncatewords: 30 }}
+            <!--         {% assign filtered_authors = site.authors | where: 'short_name', post.author %}-->
+            <!--         {% for author in filtered_authors %}-->
+            <!--             <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>-->
+            <!--         {% endfor %}-->
+            <div style="margin-top: 15px;">
+                {{ post.excerpt | markdownify | truncatewords: 30 }}
+            </div>
 
-      </li>
-    {% endfor %}
+        </li>
+        {% endfor %}
 
-  </ul>
+    </ul>
 </div>
