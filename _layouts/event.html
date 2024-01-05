@@ -18,7 +18,7 @@ permalink: Preprints/
                 </a>
             </h2>
 	    {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
-	    {% for author in post.author %}
+	    {% for author in site.post.authors %}
 	    	{% if author.short_name == filtered_authors.short_name %}
         		<a href="{{ author.url | absolute_url }}">{{ author.short_name }}</a>
     		{% else %}
