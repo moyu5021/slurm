@@ -5,9 +5,6 @@ layout: default
 <div>
     {{ content }}
 
-<!--    <h2 class="author-title" style="text-align: center;font-weight: bold">作者列表</h2>-->
-
-
     <div class="custom-author-list">
         {% for author in site.authors %}
         <a class="custom-author-list-item" href="{{ author.url | absolute_url }}">
