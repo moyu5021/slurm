@@ -29,7 +29,7 @@ layout: default
   {% endfor %}
   {% assign lec_posts = site.posts | where: 'author', page.short_name | where: 'categories', 'Lectures' %}
   {% for post in lec_posts %}
-    <li style="color: #fff">{{ post.date |date:"%Y-%m-%d"}}<a href="/slurm{{ post.url }}">{{ post.title }}</a></li>
+    <li style="color: #fff">{{ post.date|date:"%Y-%m-%d"}} <a href="/slurm{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 </div>
