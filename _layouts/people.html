@@ -23,11 +23,11 @@ layout: default
 
 <h2 style="color: #fff">Recent Preprints & Lectures</h2>
 <ul>
-  {% assign pre_posts = site.posts | where: 'author', page.short_name | where: 'category', 'Preprints' %}
+  {% assign pre_posts = site.posts | where: 'author', page.short_name | where: 'categories', 'Preprints' %}
   {% for post in pre_posts %}
     <li><a href="{{ post.weburl }}">{{ post.title }}</a></li>
   {% endfor %}
-  {% assign lec_posts = site.posts | where: 'author', page.short_name | where: 'category', 'Lectures' %}
+  {% assign lec_posts = site.posts | where: 'author', page.short_name | where: 'categories', 'Lectures' %}
   {% for post in lec_posts %}
     <li><a href="/slurm{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
