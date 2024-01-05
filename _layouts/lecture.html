@@ -1,6 +1,7 @@
 ---
 layout: default
 permalink: Lectures/
+date_format: "%Y-%m-%d" 
 ---
 
 <div>
@@ -13,16 +14,15 @@ permalink: Lectures/
     {% for post in site.categories.Lectures %}
       <li>
 
-        {% assign date_format = site.cayman-blog.date_format | default: "%b %-d, %Y" %}
         <span class="post-meta">{{ post.date | date: date_format }}</span>
 
         <h2>
           <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title | escape }}</a>
-        </h2>
          {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
          {% for author in filtered_authors %}
              <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>
          {% endfor %}
+        </h2>
 
         {{ post.excerpt | markdownify | truncatewords: 30 }}
 
