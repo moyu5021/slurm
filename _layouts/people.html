@@ -21,12 +21,15 @@ layout: default
     {{ content }}
 
 
-<h2 style="color: #fff">Posts</h2>
+<h2 style="color: #fff">Recent preprints&lectures</h2>
 <ul>
-  {% assign filtered_posts = site.posts | where: 'author', page.short_name %}
-  {% for post in filtered_posts %}
-<!--    <li><a href="/slurm{{ post.url }}">{{ post.title }}</a></li>  -->
+  {% assign pre_posts = site.posts | where: 'author', page.short_name | where: 'category', 'Preprints' %}
+  {% assign lec_posts = site.posts | where: 'author', page.short_name | where: 'category', 'Lectures' %}
+  {% for post in pre_posts %}
     <li><a href="{{ post.weburl }}">{{ post.title }}</a></li>
+  {% endfor %}
+  {% for post in lec_posts %}
+    <li><a href="/slurm{{ post.url }}">{{ post.title }}</a></li>
   {% endfor %}
 </ul>
 </div>
