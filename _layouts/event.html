@@ -22,7 +22,7 @@ permalink: Preprints/
               {% if author in filtered_authors %}
                  <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
               {% else %} 
-	          {{ author}}
+	         <a> {{ author}}</a>
 	      {% endif %}  
             {% endfor %}
             <!--<div style="margin-top: 15px">{{ post.excerpt | markdownify | truncatewords: 30 }}</div>-->
