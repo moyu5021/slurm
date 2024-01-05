@@ -13,17 +13,17 @@ permalink: Preprints/
             <!--<span class="post-meta">{{ post.date | date: date_format }}</span>-->
             <h2>
              <!--   {{ post.date|date:"%Y年%m月%d日"}} by xj 2024.01.04-->
-                <a
-                    class="post-link"
-                    href="{{ post.weburl }}"
-                    title="{{ post.title }}"
-                >
+                <a class="post-link" href="{{ post.weburl }}" title="{{ post.title }}" >
                     {{ post.title | escape }}
                 </a>
             </h2>
             {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
-            {% for author in filtered_authors %}
-            <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
+	    {% for author in post.author %}
+              {% if author in filtered_authors %}
+                 <a href="{{ author.url | absolute_url}}">{{ author.short_name }}</a>
+              {% else %} 
+	          {{ author}}
+	      {% endif %}  
             {% endfor %}
             <!--<div style="margin-top: 15px">{{ post.excerpt | markdownify | truncatewords: 30 }}</div>-->
         </li>
