@@ -693,8 +693,7 @@ body {
     font-size: 16px;
     color: #fff; }
   .home-static .item-right {
-    flex: 0 0 auto;
-    height: 250px;
+    flex: 0 0 440px;
     margin-left: 30px; }
     .home-static .item-right img {
       display: block;
