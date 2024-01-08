@@ -61,7 +61,7 @@ layout: default
 		{% if post.categories contains 'Preprints' %}
        		<a href="{{ post.weburl }}">{{ post.title }}</a>
        		{% else %}
-       		{{ post.date|date:"%Y-%m-%d"}} <a href="/slurm{{ post.url }}">{{ post.title }}</a>
+       		{{ post.date|date:"%Y-%m-%d"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
        		{% endif %}
                 </h4>
             </article>

@@ -22,7 +22,7 @@ date_format: "%Y-%m-%d"
             by
             {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
             {% for author in filtered_authors %}
-            <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>
+            <a href="{{ site.baseurl }}{{ author.url }}">{{ author.short_name }}</a>
             {% endfor %}
             on
             {{post.date|date:"%Y-%m-%d"}}

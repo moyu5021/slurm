@@ -28,7 +28,7 @@ layout: default
        {% if post.categories contains 'Preprints' %}
        <li><a href="{{ post.weburl }}">{{ post.title }}</a></li>
        {% else %}
-       <li style="color: #fff">{{ post.date|date:"%Y-%m-%d"}} <a href="/slurm{{ post.url }}">{{ post.title }}</a></li>
+       <li style="color: #fff">{{ post.date|date:"%Y-%m-%d"}} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
        {% endif %}
     {% endfor %}
 </ul>
