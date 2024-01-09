@@ -1,7 +1,7 @@
 ---
 layout: author
 title: People
-tagline: What I'm doing now
+tagline: author of Preprints&Lectures
 permalink: /author.html
 ref: author
 order: 2
