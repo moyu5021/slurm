@@ -1,8 +1,7 @@
 ---
 username: 郭沚淇
-zidingyi: 自我介绍
 name: Zhiqi Guo
-position: Master student
+position: Students
 location: China
 layout: people
 picture: /slurm/assets/authors/guozhiqi_p.jpg
