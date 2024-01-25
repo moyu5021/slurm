@@ -1,7 +1,7 @@
 ---
 username: 王宇宁
 name: Wang Yuning
-position: Students
+position: Student
 location: China
 layout: people
 picture: /slurm/assets/authors/moren-man_p.jpg

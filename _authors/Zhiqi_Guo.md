@@ -1,7 +1,7 @@
 ---
 username: 郭沚淇
 name: Zhiqi Guo
-position: Students
+position: Student
 location: China
 layout: people
 picture: /slurm/assets/authors/guozhiqi_p.jpg
