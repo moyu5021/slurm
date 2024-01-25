@@ -5,7 +5,7 @@ name: Zhiqi Guo
 position: Master student
 location: China
 layout: people
-picture: /slurm/assets/authors/p-caiyuelin.jpg
+picture: /slurm/assets/authors/guozhiqi_p.jpg
 short_name: Zhiqi Guo
 ---
 
