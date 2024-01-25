@@ -2,7 +2,7 @@
 layout: post
 title: "第二场讲座"
 author: zhangsan
-categories: Lectures
+categories: Seminars
 ---
 
 我们将于2023年10月1日举办第二场讲座，欢迎来参加。

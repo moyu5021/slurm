@@ -1,9 +1,9 @@
 ---
-layout: lecture
-title: Lecture
+layout: seminar
+title: Seminar
 tagline: 博客列表
-permalink: /lecture.html
-ref: lecture
+permalink: /seminar.html
+ref: seminar
 order: 0
 ---
 
