@@ -1,4 +1,4 @@
-title: Dark Matter
+title: Y. -L. S. Tsai
 description: Slurm(Simple Linux Utility for Resource Management， http://slurm.schedmd.com/ )是开源的、具有容错性和高度可扩展的Linux集群超级计算系统资源管理系统.
 show_downloads: false
 
@@ -38,7 +38,7 @@ plugins:
 target-blank:
     rel: nofollow
 
-header_page_refs: ['about','event', 'author','seminar','contact']
+header_page_refs: ['research','event', 'author','seminar','contact']
 
 collections:
   authors:

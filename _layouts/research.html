@@ -1,0 +1,39 @@
+---
+layout: default
+permalink: Researchs/
+date_format: "%Y-%m-%d"
+---
+
+<div>
+
+    {{ content }}
+
+    <div>&nbsp;</div>
+
+    <ul class="post-list">
+        {% for post in site.categories.Researchs %}
+        <li>
+
+            <h2>
+                <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title |
+                    escape }}</a>
+            </h2>
+            <span class="post-meta">
+            by
+            {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
+            {% for author in filtered_authors %}
+            <a href="{{ site.baseurl }}{{ author.url }}">{{ author.short_name }}</a>
+            {% endfor %}
+            on
+            {{post.date|date:"%Y-%m-%d"}}
+        </span>
+
+            <div style="margin-top: 15px;">
+                {{ post.excerpt | markdownify | truncatewords: 30 }}
+            </div>
+
+        </li>
+        {% endfor %}
+
+    </ul>
+</div>
