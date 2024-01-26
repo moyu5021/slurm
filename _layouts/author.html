@@ -14,12 +14,12 @@ layout: default
             <img class="item-image" src="{{ site.baseurl }}/assets/images/slurm_logo.png">
             {% endif %}
             <h3 class="item-name">{{ author.name |--> escape }}</h3>
-            {% if author.Invite %}
-	    <div class="item-text" href="{{ site.baseurl }}/contact">{{ author.Invite}} </div>
-            {% endif %}
           <!--  <div class="item-position">{{ author.position }}</div> -->
           <!--  <div class="item-text">{{ author.bio | markdownify}}</div> -->
         </a>
+            {% if author.Invite %}
+	    <a class="item-text" href="{{ site.baseurl }}/contact">{{ author.Invite}} </a>
+            {% endif %}
         {% endfor %}
 
         <!--老的列表配置-->
