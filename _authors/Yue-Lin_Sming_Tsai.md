@@ -1,6 +1,6 @@
 ---
 username: 暂无
-zidingyi: 自我介绍
+Invite: Join Us
 name: Yue-Lin Sming Tsai
 location: China
 position: Faculty
