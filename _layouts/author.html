@@ -15,7 +15,7 @@ layout: default
             {% endif %}
             <h3 class="item-name">{{ author.name |--> escape }}</h3>
             {% if author.Invite %}
-	    <a class="author-link" href="{{ site.baseurl }}/contact">{{ author.Invite}} </a>
+	    <div class="item-text" href="{{ site.baseurl }}/contact">{{ author.Invite}} </div>
             {% endif %}
           <!--  <div class="item-position">{{ author.position }}</div> -->
           <!--  <div class="item-text">{{ author.bio | markdownify}}</div> -->
