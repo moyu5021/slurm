@@ -8,37 +8,107 @@ date_format: "%Y-%m-%d"
 
     {{ content }}
 
-    <div>&nbsp;</div>
+    <div style="display: flex;">&nbsp;
 
-    <ul class="post-list">
-        {% for post in site.categories.Seminars %}
-        <li>
-
-            <h2>
-                <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title |
-                    escape }}</a>
-            </h2>
-            <span class="post-meta">
-            by
-            {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
-            {% for author in filtered_authors %}
-            <a href="{{ site.baseurl }}{{ author.url }}">{{ author.short_name }}</a>
+        <div>
+            {% assign postYears = "" %}
+            {% assign reversedPosts = site.categories.Seminars | reverse %}
+            {% for post in reversedPosts %}
+            {% unless postYears contains post.date | date: "%Y" %}
+                <a style="
+                    display:block;
+                    text-align: center;
+                    border: 1px solid #ffffff;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding: 6px 50px;
+                    text-decoration: none;
+                "
+                href="?year={{ post.date | date: '%Y' }}"
+                >
+                    {{ post.date | date: "%Y" }}
+                </a>
+            {% assign postYears = postYears | append: post.date | date: "%Y" %}
+            {% endunless %}
             {% endfor %}
-            on
-            {{post.date|date:"%Y-%m-%d"}}
-        </span>
+        </div>
 
+        <ul class="post-list" style="margin-left: 20px;flex:1">
+            {% for post in site.categories.Seminars %}
+            <li class="post-item" data-year="{{ post.date | date: '%Y' }}">
 
-            <!--         {% assign filtered_authors = site.authors | where: 'short_name', post.author %}-->
-            <!--         {% for author in filtered_authors %}-->
-            <!--             <a href="/slurm{{ author.url }}">{{ author.short_name }}</a>-->
-            <!--         {% endfor %}-->
-            <div style="margin-top: 15px;">
-                {{ post.excerpt | markdownify | truncatewords: 30 }}
-            </div>
+                <h2>
+                    <a class="post-link" href="{{ post.url | absolute_url }}" title="{{ post.title }}">{{ post.title |
+                        escape }}</a>
+                </h2>
+                <span class="post-meta">
+                    by
+                    {% assign filtered_authors = site.authors | where: 'short_name', post.author %}
+                    {% for author in filtered_authors %}
+                    <a href="{{ site.baseurl }}{{ author.url }}">{{ author.short_name }}</a>
+                    {% endfor %}
+                    on
+                    {{post.date|date:"%Y-%m-%d"}}
+                </span>
+                <div style="margin-top: 15px;">
+                    {{ post.excerpt | markdownify | truncatewords: 30 }}
+                </div>
+            </li>
+            {% endfor %}
 
-        </li>
-        {% endfor %}
-
-    </ul>
+        </ul>
+    </div>
 </div>
+
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var urlParams = new URLSearchParams(window.location.search);
+        var year = urlParams.get('year');
+        var posts = document.querySelectorAll('.post-item');
+        var years = document.querySelectorAll('a[href^="?year="]');
+        years.forEach(function (yearElement) {
+            var yearInHref = yearElement.getAttribute('href').split('=')[1];
+            if (yearInHref === year) {
+                yearElement.classList.add('active-year');
+            } else {
+                yearElement.classList.remove('active-year');
+            }
+        });
+        posts.forEach(function (post) {
+            var postYear = post.getAttribute('data-year');
+            if (year === null || postYear === year) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+
+        years.forEach(function (yearElement) {
+            yearElement.addEventListener('click', function (event) {
+                event.preventDefault();
+                if (yearElement.classList.contains('active-year')) {
+                    yearElement.classList.remove('active-year');
+                    posts.forEach(function (post) {
+                        post.style.display = 'block';
+                    });
+                } else {
+                    years.forEach(function (otherYearElement) {
+                        otherYearElement.classList.remove('active-year');
+                    });
+                    yearElement.classList.add('active-year');
+                    var yearInHref = yearElement.getAttribute('href').split('=')[1];
+                    posts.forEach(function (post) {
+                        var postYear = post.getAttribute('data-year');
+                        if (postYear === yearInHref) {
+                            post.style.display = 'block';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>

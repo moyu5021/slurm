@@ -1133,3 +1133,8 @@ a {
     .site-footer .my-svg-icon {
       width: 36px;
       height: 36px; } }
+
+.active-year {
+  background-color: #007BFF;
+  border-color: #007BFF !important;
+  color: white; }

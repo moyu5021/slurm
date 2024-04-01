@@ -185,63 +185,144 @@
 
     
 
-    <div> </div>
+    <div style="display: flex;"> 
 
-    <ul class="post-list">
-        
-        <li>
-
-            <h2>
-                <a class="post-link" href="http://localhost:4000/slurm/seminars/2023/05/30/The-second-lecture.html" title="第二场讲座">第二场讲座</a>
-            </h2>
-            <span class="post-meta">
-            by
+        <div>
             
             
-            on
-            2023-05-30
-        </span>
-
-
-            <!--         -->
-            <!--         -->
-            <div style="margin-top: 15px;">
-                <p>我们将于2023年10月1日举办第二场讲座，欢迎来参加。</p>
-
-
-            </div>
-
-        </li>
-        
-        <li>
-
-            <h2>
-                <a class="post-link" href="http://localhost:4000/slurm/seminars/2013/05/20/The-first-lecture.html" title="第一场讲座">第一场讲座</a>
-            </h2>
-            <span class="post-meta">
-            by
             
             
-            on
-            2013-05-20
-        </span>
+                <a style="
+                    display:block;
+                    text-align: center;
+                    border: 1px solid #ffffff;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding: 6px 50px;
+                    text-decoration: none;
+                " href="?year=2013">
+                    2013
+                </a>
+            
+            
+            
+            
+                <a style="
+                    display:block;
+                    text-align: center;
+                    border: 1px solid #ffffff;
+                    border-radius: 5px;
+                    margin-bottom: 15px;
+                    font-size: 20px;
+                    color: #ffffff;
+                    padding: 6px 50px;
+                    text-decoration: none;
+                " href="?year=2023">
+                    2023
+                </a>
+            
+            
+            
+        </div>
+
+        <ul class="post-list" style="margin-left: 20px;flex:1">
+            
+            <li class="post-item" data-year="2023">
+
+                <h2>
+                    <a class="post-link" href="http://localhost:4000/slurm/seminars/2023/05/30/The-second-lecture.html" title="第二场讲座">第二场讲座</a>
+                </h2>
+                <span class="post-meta">
+                    by
+                    
+                    
+                    on
+                    2023-05-30
+                </span>
+                <div style="margin-top: 15px;">
+                    <p>我们将于2023年10月1日举办第二场讲座，欢迎来参加。</p>
 
 
-            <!--         -->
-            <!--         -->
-            <div style="margin-top: 15px;">
-                <p>我们将于2023年10月1日举办第一场讲座，欢迎来参加.<br>
+                </div>
+            </li>
+            
+            <li class="post-item" data-year="2013">
+
+                <h2>
+                    <a class="post-link" href="http://localhost:4000/slurm/seminars/2013/05/20/The-first-lecture.html" title="第一场讲座">第一场讲座</a>
+                </h2>
+                <span class="post-meta">
+                    by
+                    
+                    
+                    on
+                    2013-05-20
+                </span>
+                <div style="margin-top: 15px;">
+                    <p>我们将于2023年10月1日举办第一场讲座，欢迎来参加.<br>
 我们将于2023年10月1日举办第一场讲座，欢迎来参加。</p>
 
 
-            </div>
+                </div>
+            </li>
+            
 
-        </li>
-        
-
-    </ul>
+        </ul>
+    </div>
 </div>
 
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        var urlParams = new URLSearchParams(window.location.search);
+        var year = urlParams.get('year');
+        var posts = document.querySelectorAll('.post-item');
+        var years = document.querySelectorAll('a[href^="?year="]');
+        years.forEach(function (yearElement) {
+            var yearInHref = yearElement.getAttribute('href').split('=')[1];
+            if (yearInHref === year) {
+                yearElement.classList.add('active-year');
+            } else {
+                yearElement.classList.remove('active-year');
+            }
+        });
+        posts.forEach(function (post) {
+            var postYear = post.getAttribute('data-year');
+            if (year === null || postYear === year) {
+                post.style.display = 'block';
+            } else {
+                post.style.display = 'none';
+            }
+        });
+
+        years.forEach(function (yearElement) {
+            yearElement.addEventListener('click', function (event) {
+                event.preventDefault();
+                if (yearElement.classList.contains('active-year')) {
+                    yearElement.classList.remove('active-year');
+                    posts.forEach(function (post) {
+                        post.style.display = 'block';
+                    });
+                } else {
+                    years.forEach(function (otherYearElement) {
+                        otherYearElement.classList.remove('active-year');
+                    });
+                    yearElement.classList.add('active-year');
+                    var yearInHref = yearElement.getAttribute('href').split('=')[1];
+                    posts.forEach(function (post) {
+                        var postYear = post.getAttribute('data-year');
+                        if (postYear === yearInHref) {
+                            post.style.display = 'block';
+                        } else {
+                            post.style.display = 'none';
+                        }
+                    });
+                }
+            });
+        });
+    });
+</script>
             
 <!--            <footer class="site-footer">-->
 <!--                &lt;!&ndash; SVG icons from https://iconmonstr.com &ndash;&gt;-->
