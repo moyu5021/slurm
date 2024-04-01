@@ -12,7 +12,8 @@ date_format: "%Y-%m-%d"
 
         <div>
             {% assign postYears = "" %}
-            {% assign reversedPosts = site.categories.Seminars | reverse %}
+            <!--{% assign reversedPosts = site.categories.Seminars | reverse %}-->
+            {% assign reversedPosts = site.categories.Seminars %}
             {% for post in reversedPosts %}
             {% unless postYears contains post.date | date: "%Y" %}
                 <a style="
