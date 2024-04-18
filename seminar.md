@@ -1,6 +1,6 @@
 ---
 layout: seminar
-title: Seminar
+title: Talks&News
 tagline: 研讨会列表
 permalink: /seminar.html
 ref: seminar
