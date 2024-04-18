@@ -6,6 +6,8 @@ location: China
 layout: people
 picture: /slurm/assets/authors/moren-man_p.jpg
 short_name: Xiao Wang
+time: 2023.09~
+degree: Master
 ---
 
-Wang's research direction is particle astrophysics, mainly studying the properties of dark matter through the antimatter in cosmic rays, such as antiprotons, anti-deuterium, anti-helium and so on.
+Searching Dark Matter from Cosmic ray data
