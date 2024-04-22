@@ -11,27 +11,27 @@ date_format: "%Y-%m-%d"
     <div style="display: flex;">&nbsp;
 
         <div>
-            {% assign postYears = "" %}
-            <!--{% assign reversedPosts = site.categories.Seminars | reverse %}-->
+            {% assign postYears = "" | split: "," %}
             {% assign reversedPosts = site.categories.Seminars %}
             {% for post in reversedPosts %}
-            {% unless postYears contains post.date | date: "%Y" %}
-                <a style="
-                    display:block;
-                    text-align: center;
-                    border: 1px solid #ffffff;
-                    border-radius: 5px;
-                    margin-bottom: 15px;
-                    font-size: 20px;
-                    color: #ffffff;
-                    padding: 6px 50px;
-                    text-decoration: none;
-                "
-                href="?year={{ post.date | date: '%Y' }}"
-                >
-                    {{ post.date | date: "%Y" }}
-                </a>
-            {% assign postYears = postYears | append: post.date | date: "%Y" %}
+            {% assign currentYear = post.date | date: "%Y" %}
+            {% unless postYears contains currentYear %}
+            <a style="
+            display:block;
+            text-align: center;
+            border: 1px solid #ffffff;
+            border-radius: 5px;
+            margin-bottom: 15px;
+            font-size: 20px;
+            color: #ffffff;
+            padding: 6px 50px;
+            text-decoration: none;
+        "
+               href="?year={{ currentYear }}"
+            >
+                {{ currentYear }}
+            </a>
+            {% assign postYears = postYears | push: currentYear %}
             {% endunless %}
             {% endfor %}
         </div>
