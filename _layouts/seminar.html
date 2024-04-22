@@ -46,11 +46,11 @@ date_format: "%Y-%m-%d"
                 </h2>
                 <span class="post-meta">
                     by
-                    <!-- {% assign filtered_authors = site.authors | where: 'short_name', post.author %} --!>
-		    {% assign filtered_authors = post.author %}
+		    {{ post.author }}
+                    <!-- {% assign filtered_authors = site.authors | where: 'short_name', post.author %} 
                     {% for author in filtered_authors %}
                     <a href="{{ site.baseurl }}{{ author.url }}">{{ author.short_name }}</a>
-                    {% endfor %}
+                    {% endfor %} --!>
                     on
                     {{post.date|date:"%Y-%m-%d"}}
                 </span>
