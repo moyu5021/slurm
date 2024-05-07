@@ -13,9 +13,11 @@ order: 1
 
 # 联系地址
 
-南京市栖霞区元化路10号
+Purple Mountain Observatory, Chinese Academy of Sciences
 
-[![地址]({{ site.baseurl }}/assets/images/map.jpg)](https://map.baidu.com/poi/中国科学院紫金山天文台/@13238342.997191343,3757118.126055388,13.78z?uid=ffaeee6237508982c91b95b0&info_merge=1&isBizPoi=false&ugc_type=3&ugc_ver=1&device_ratio=2&compat=1&pcevaname=pc4.1&querytype=detailConInfo&da_src=shareurl){:height="50%" width="50%"}
+No. 10 Yuanhua Road, Qixia District, Nanjing City
+
+[![地址]({{ site.baseurl }}/assets/images/maps.png)](https://www.bing.com/maps?FORM=Z9LH2&cp=32.124075%7E118.95934&lvl=14.6){:height="50%" width="50%"}
 
 
 
