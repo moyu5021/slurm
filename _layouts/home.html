@@ -57,7 +57,7 @@ layout: default
                 <div>{{ category_name }} ({{site.categories[category_name].size()}})</div>
                 <!-- <a href="{{ site.baseurl }}/{{ category_name | slugize }}">More>></a> -->
 		{% if category_name == "Preprints" %}
-                   <a href="{{ site.baseurl }}/event">{{ category_name }}</a>
+                   <a href="{{ site.baseurl }}/event">More>></a>
                 {% else %}
                    <a href="{{ site.baseurl }}/seminar">More>></a>
                 {% endif %}
