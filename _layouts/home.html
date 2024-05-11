@@ -49,6 +49,7 @@ layout: default
 
     <div id="archives">
         {% for category in site.categories %}
+	{% if category[0] == "Preprints" or category[0] == "Talks_News" %}
         <div class="archive-group">
             {% capture category_name %}{{ category | first }}{%endcapture %}
             <div id="#\{\{ category_name | slugize \}\}"></div>
@@ -75,6 +76,7 @@ layout: default
             </article>
             {% endfor %}
         </div>
+	{% endif %}
         {% endfor %}
     </div>
 </div>
