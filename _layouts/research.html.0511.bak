@@ -13,12 +13,7 @@ Secondly, we can improve our knowledge of the standard background--- including a
 <div>
 
     {{ content }}
-    {% for post in site.categories.Researchs %}
-        <a class="custom-researchs-list-item" href="{{ post.url | absolute_url }}">
-            <img class="item-image" src="{{ post.picture }}" alt="{{ post.title }}">
-        </a>
-    {% endfor %}
-<!--
+
     <div style="margin:-16px; margin-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between;">
         <div style="flex: 0 0 50%;padding: 16px">
             <img style="display: block" src="{{ site.baseurl }}/assets/research/001.jpg">
@@ -33,7 +28,6 @@ Secondly, we can improve our knowledge of the standard background--- including a
             <img style="display: block" src="{{ site.baseurl }}/assets/research/004.jpg">
         </div>
     </div>
--->
 
 <!--    <ul class="post-list">
         {% for post in site.categories.Researchs %}
