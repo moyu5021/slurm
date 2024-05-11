@@ -6,12 +6,10 @@ ref: contact
 order: 1
 ---
 
-# Welcome to join us in discussing science !!
+# Welcome to join us in discussing science !!!
 
 ## Email
-```markdown
-smingtsai@hotmail.com
-```
+xxx@mail.com
 
 ## Address
 
