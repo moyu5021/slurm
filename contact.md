@@ -6,12 +6,14 @@ ref: contact
 order: 1
 ---
 
-# 联系我们
+# Welcome to join us in discussing science !!
+
+## Email
 ```markdown
-如果你想加入我们，请邮件联系 xxx@pmo.ac.cn
+smingtsai@hotmail.com
 ```
 
-# 联系地址
+## Address
 
 Purple Mountain Observatory, Chinese Academy of Sciences
 
