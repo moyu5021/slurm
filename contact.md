@@ -6,10 +6,9 @@ ref: contact
 order: 1
 ---
 
-# Welcome to join us in discussing science !!!
 
 ## Email
-xxx@mail.com
+smingtsai_at_pmo.ac.cn
 
 ## Address
 
