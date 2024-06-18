@@ -5,7 +5,7 @@ name: Yue-Lin Sming Tsai
 location: China
 position: Faculty
 layout: people
-picture: /slurm/assets/authors/caiyuelin_p.jpg
+picture: /slurm/assets/authors/caiyuelin_p.png
 short_name: Yue-Lin Sming Tsai
 ---
 
