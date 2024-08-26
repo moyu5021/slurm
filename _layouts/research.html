@@ -42,12 +42,21 @@ Our current research grants are all based on the following proposals:  (i) "The 
 <div>
 
     {{ content }}
-    {% for post in site.categories.Researchs %}
+<!--    {% for post in site.categories.Researchs %}
         <a class="custom-researchs-list-item" href="{{ post.url | absolute_url }}">
             <img class="item-image" src="{{ post.picture }}" width = "450px" alt="{{ post.title }}">
 	    <p class="caption">{{ post.title}}</p>
         </a>
     {% endfor %}
+--!>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); grid-gap: 16px; padding: 16px;">
+  {% for post in site.categories.Researchs limit:4 %} <!-- 限制只显示4篇文章 -->
+    <a class="custom-researchs-list-item" href="{{ post.url | absolute_url }}" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
+      <img class="item-image" src="{{ post.picture }}" style="width: 100%; max-width: 450px; height: auto;" alt="{{ post.title }}">
+      <p class="caption" style="text-align: center; margin-top: 8px;">{{ post.title }}</p>
+    </a>
+  {% endfor %}
+</div>
 <!--
     <div style="margin:-16px; margin-top: 16px; display: flex; flex-wrap: wrap; justify-content: space-between;">
         <div style="flex: 0 0 50%;padding: 16px">
