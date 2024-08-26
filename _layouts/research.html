@@ -45,7 +45,7 @@ Our current research grants are all based on the following proposals:  (i) "The 
     {% for post in site.categories.Researchs %}
         <a class="custom-researchs-list-item" href="{{ post.url | absolute_url }}">
             <img class="item-image" src="{{ post.picture }}" width = "450px" alt="{{ post.title }}">
-	    <p class="caption">"{{ post.title}}"</p>
+	    <p class="caption">{{ post.title}}</p>
         </a>
     {% endfor %}
 <!--
