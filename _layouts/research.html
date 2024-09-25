@@ -4,16 +4,20 @@ permalink: Researchs/
 date_format: "%Y-%m-%d"
 ---
 
-    <div style="color: #ffffff;white-space: pre-wrap;text-indent: 2em">
-<p style="text-align:center;"><img class="item-image" src="{{ site.baseurl }}/assets/research/figure1.png" width= "470px" alt=""></p>
+    <div style="color: #ffffff;white-space: pre-wrap">
+<p style="text-align:center;"><img class="item-image" src="{{ site.baseurl }}/assets/research/figure1.png" alt=""></p>
     The nature of dark matter (DM) remains one of the biggest mysteries of this century, with extensive global efforts dedicated to searching for its non-gravitational interactions. Despite significant experimental advancements in recent decades, the particle properties of DM remain unknown.For example, DM particle mass spans over 80 orders of magnitude, posing challenges for both experimental design and theoretical research.
 Our team focuses on two strategies:
+
 (i) Establishing a simplified DM model based on particle physics to predict potential signals.
 This approach allows for cross-verification with other particle physics experiments, prediction of the DM mass range, and the suggestion of new detection methods within the allowed parameter space.This Lagrangian-based approach allows us to incorporate all experimental constraints and further explore the potential parameter space.The Planck relic density can serve as a DM signal, predicting detectable signals in human instruments.
+
 (ii) Improving our knowledge of the standard background, including astrophysical, particle, and cosmological backgrounds.By engaging observational data with this standard background, we may detect an excess potentially from DM particles.If this excess is real, it may improve our understanding of the standard background and further identify regions where a potential DM signal may exist. 
 <p style="text-align:center;"><img class="item-image" src="{{ site.baseurl }}/assets/research/figure2.png" alt=""></p>
 Figure 1 illustrates our approaches to test a DM theory by starting with a DM Lagrangian coupled to an SM Lagrangian and comparing prediction to experimental data.
+
 Bridging DM models and experimental data is a challenging task.Fig 2 illustrates the workflow for studying the nature of DM.A comprehensive study encompasses all steps from (a) to (f), although some DM research focuses on only a portion or individual steps.The blue boxes (a) to (b) represent the particle model-building process.Conversely, researchers working on DM indirect detection, represented by the green section from (c) to (f), consider more astrophysical parameters than just a particle model.Interestingly, those working on the blue boxes are usually unfamiliar with the green sections, and vice versa.To benefit the community, my collaborators and I have developed useful codes like LikeDM (download the code from <a href="https://likedm.hepforge.org">https://likedm.hepforge.org</a>) and BayesFITS.These codes facilitate combination studies of both particle and astrophysical model parameter spaces.
+
 Our current research grants are all based on the following proposals:  (i) "The theoretical studies of dark matter indirect detection"---the National Key Research and Development Program of China (2022YFF0503304), (ii) "Major Scientific Issues in Cosmology and Astronomy: Searching for Dark Matter Particles and Investigating the Nature of Dark Energy"---CAS Project for Young Scientists in Basic Research (YSBR-92), and (iii) "Constraints on hidden dark matter from astroparticle physics"---National Natural Science Fund for Excellent Young Scientists Fund Program (Overseas, 2011).
     </div>
 <div>
@@ -30,7 +34,7 @@ Our current research grants are all based on the following proposals:  (i) "The 
   {% for post in site.categories.Researchs limit:4 %} <!-- 限制只显示4篇文章 -->
     <a class="custom-researchs-list-item" href="{{ post.url | absolute_url }}" style="display: flex; flex-direction: column; align-items: center; text-decoration: none;">
       <img class="item-image" src="{{ post.picture }}" style="width: 100%; max-width: 450px; height: auto;" alt="{{ post.title }}">
-      <p class="caption" style="text-align: center; margin-top: 8px;">{{ post.title }}</p>
+      <p class="caption" style="text-align: center; margin-top: 12px;">{{ post.title }}</p>
     </a>
   {% endfor %}
 </div>
