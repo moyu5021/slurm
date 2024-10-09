@@ -11,7 +11,7 @@ widgets:
 - links
 - rss
 
-
+markdown: kramdown
 google_analytics:
 
 # cayman-blog date format
