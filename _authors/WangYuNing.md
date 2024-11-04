@@ -4,7 +4,7 @@ name: Yu-Ning Wang
 position: Student
 location: China
 layout: people
-picture: /slurm/assets/authors/moren-man_p.jpg
+picture: /slurm/assets/authors/moren-woman_p.jpg
 short_name: Yu-Ning Wang
 degree: Master
 ---
